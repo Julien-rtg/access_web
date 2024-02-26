@@ -30,7 +30,11 @@ body{
   display: flex;
   flex-direction: row;
 }
-
+@media only screen and (max-width: 1024px) {
+  .container_article {
+    flex-direction: column-reverse;
+  }
+}
 .container_article img{
   max-height: 200px;
 }
