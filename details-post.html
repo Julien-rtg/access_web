@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="detail access web blog">
+    <meta name="description" content="detail access web blog" />
     <link rel="stylesheet" href="style.css" />
     <title>Details article</title>
   </head>
-  <body>
-    <div class="section p-0">
+  <body class="section p-0">
+    <header>
       <nav class="navbar">
         <div class="navbar-brand">
           <a class="navbar-item index" aria-label="accueil" href="index.html">
@@ -42,80 +42,77 @@
           </div>
         </div>
       </nav>
+    </header>
 
-      <main class="main">
-        <section class="article">
-          <h2 aria-label="titre de l'article">Titre article</h2>
-          <p>
-            Nunc iaculis iaculis dapibus. Quisque tristique finibus ligula a
-            gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas pulvinar pretium sapien a gravida. Suspendisse viverra
-            purus id felis blandit, nec porta augue sodales. Proin ultricies
-            condimentum enim at fermentum. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Ut consectetur dictum convallis. Orci
-            varius natoque penatibus et magnis dis parturient montes, nascetur
-            ridiculus mus. Cras porttitor dolor vitae arcu porttitor dictum. In
-            mollis eros ac urna mattis, at laoreet eros ornare.
-          </p>
+    <main class="main">
+      <article class="article">
+        <h1>Titre article</h1>
+        <p>
+          Nunc iaculis iaculis dapibus. Quisque tristique finibus ligula a
+          gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Maecenas pulvinar pretium sapien a gravida. Suspendisse viverra purus
+          id felis blandit, nec porta augue sodales. Proin ultricies condimentum
+          enim at fermentum. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Ut consectetur dictum convallis. Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          Cras porttitor dolor vitae arcu porttitor dictum. In mollis eros ac
+          urna mattis, at laoreet eros ornare.
+        </p>
 
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Colonne 1</th>
-                <th scope="col">Colonne 2</th>
-                <th scope="col">Colonne 3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-              </tr>
-              <tr>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-              </tr>
-              <tr>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-              </tr>
-              <tr>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-                <td scope="row">Contenu</td>
-              </tr>
-            </tbody>
-          </table>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Colonne 1</th>
+              <th scope="col">Colonne 2</th>
+              <th scope="col">Colonne 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Contenu</td>
+              <td>Contenu</td>
+              <td>Contenu</td>
+            </tr>
+            <tr>
+              <td>Contenu</td>
+              <td>Contenu</td>
+              <td>Contenu</td>
+            </tr>
+            <tr>
+              <td>Contenu</td>
+              <td>Contenu</td>
+              <td>Contenu</td>
+            </tr>
+            <tr>
+              <td>Contenu</td>
+              <td>Contenu</td>
+              <td>Contenu</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+      <aside class="commentaires" id="commentaires">
+        <article class="commentaire">
+          <p>Commentaire 1</p>
+        </article>
+        <article class="commentaire">
+          <p>Commentaire 2</p>
+        </article>
+        <article class="commentaire">
+          <p>Commentaire 3</p>
+        </article>
+        <article class="commentaire">
+          <p>Commentaire 4</p>
+        </article>
+      </aside>
+    </main>
 
-          <section class="commentaires" id="commentaires">
-            <div class="commentaire">
-              <p>Commentaire 1</p>
-            </div>
-            <div class="commentaire">
-              <p>Commentaire 2</p>
-            </div>
-            <div class="commentaire">
-              <p>Commentaire 3</p>
-            </div>
-            <div class="commentaire">
-              <p>Commentaire 4</p>
-            </div>
-          </section>
-        </section>
-
-
-      </main>
-
-      <footer class="footer p-4 mt-5">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong>
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer p-4 mt-5">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

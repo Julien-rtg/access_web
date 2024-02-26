@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>Connexion</title>
   </head>
-  <body>
-    <div class="section p-0">
+  <body class="section p-0">
+    <header>
       <nav class="navbar">
         <div class="navbar-brand">
           <a class="navbar-item index" aria-label="accueil" href="index.html">
@@ -32,65 +32,74 @@
           <div class="navbar-start"></div>
 
           <div class="navbar-end">
-            <div class="navbar-item">
-            </div>
+            <div class="navbar-item"></div>
           </div>
         </div>
       </nav>
+    </header>
 
-      <main class="main">
-        <div class="container has-text-centered">
-          <h1 class="has-text-weight-bold">Connexion</h1>
-          <div>
-            <img
-              class="sizeLogo"
-              src="assets/1.jpg"
-              alt="logo"
-              aria-label="logo"
-            />
+    <main class="main">
+      <div class="container has-text-centered">
+        <h1 class="has-text-weight-bold">Connexion</h1>
+        <div>
+          <img
+            class="sizeLogo"
+            src="assets/1.jpg"
+            alt="logo"
+            aria-label="logo"
+          />
+        </div>
+        <form action="index.html">
+          <div class="field">
+            <label for="email" class="label has-text-left">Email</label>
+            <div class="control">
+              <input
+                class="input"
+                id="email"
+                name="email"
+                type="text"
+                placeholder="Email"
+                autofocus
+                autocomplete="username"
+                required
+              />
+            </div>
           </div>
-          <form action="index.html">
-            <div class="field">
-              <label for="email" class="label has-text-left">Email</label>
-              <div class="control">
-                <input
-                  class="input"
-                  aria-label="champ email"
-                  id="email"
-                  name="email"
-                  type="text"
-                  placeholder="Email"
-                />
-              </div>
+          <div class="field">
+            <label for="password" class="label has-text-left"
+              >Mot de passe</label
+            >
+            <div class="control">
+              <input
+                class="input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Mot de passe"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                autofocus
+              />
             </div>
-            <div class="field">
-              <label for="password" class="label has-text-left">Mot de passe</label>
-              <div class="control">
-                <input
-                  class="input"
-                  aria-label="champ mot de passe"
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="Mot de passe"
-                />
-              </div>
-            </div>
+          </div>
 
-            <button class="button is-info is-fullwidth has-text-black" aria-label="bouton de connexion" type="submit">
-              Connexion
-            </button>
-          </form>
-        </div>
-      </main>
+          <button
+            class="button is-info is-fullwidth has-text-black"
+            type="submit"
+          >
+            Connexion
+          </button>
+        </form>
+      </div>
+    </main>
 
-      <footer class="footer p-4 mt-5">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong>
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer p-4 mt-5">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
