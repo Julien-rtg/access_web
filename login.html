@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="blog accessibilité web" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="section p-0">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item index" href="index.html">
+            <img alt="logo navbar" src="/assets/1.jpg" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start"></div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="main">
+        <div class="container has-text-centered">
+          <h1 class="has-text-weight-bold">Connexion</h1>
+          <div>
+            <img
+              class="sizeLogo"
+              src="assets/1.jpg"
+              alt="logo"
+              aria-label="logo"
+            />
+          </div>
+          <form action="index.html">
+            <div class="field">
+              <label for="email" class="label has-text-left">Email</label>
+              <div class="control">
+                <input
+                  class="input"
+                  aria-label="champ email"
+                  id="email"
+                  name="email"
+                  type="text"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="password" class="label has-text-left">Mot de passe</label>
+              <div class="control">
+                <input
+                  class="input"
+                  aria-label="champ mot de passe"
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Mot de passe"
+                />
+              </div>
+            </div>
+
+            <button class="button is-info is-fullwidth has-text-black" aria-label="bouton de connexion" type="submit">
+              Connexion
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer p-4 mt-5">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

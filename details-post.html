@@ -8,19 +8,43 @@
     <title>Details article</title>
   </head>
   <body>
-    <div class="section">
-      <header class="header">
-        <div class="logo_container">
-          <img src="assets/520-100x50.jpg" alt="logo" />
+    <div class="section p-0">
+      <nav class="navbar" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item index" href="index.html">
+            <img alt="logo navbar" src="/assets/1.jpg" />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-        <div class="nav_text_container">
-          <a aria-label="Lien page accueil" href="home.html">Mon blog</a>
-          <a aria-label="Lien page connexion" href="index.html" class="login_text">Login</a>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start"></div>
+
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary has-text-dark" href="login.html">
+                  <strong>Login</strong>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
+      </nav>
 
       <main class="main">
-        <section class="detail-article">
+        <section class="article">
           <h2 aria-label="titre de l'article">Titre article</h2>
           <p>
             Nunc iaculis iaculis dapibus. Quisque tristique finibus ligula a
@@ -40,7 +64,6 @@
                 <th>Colonne 1</th>
                 <th>Colonne 2</th>
                 <th>Colonne 3</th>
-                <th>Colonne 4</th>
               </tr>
             </thead>
             <tbody>
@@ -48,16 +71,8 @@
                 <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
-                <td>Contenu</td>
               </tr>
               <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
@@ -66,53 +81,40 @@
                 <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
-                <td>Contenu</td>
               </tr>
               <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-                <td>Contenu</td>
-              </tr>
-              <tr>
-                <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
                 <td>Contenu</td>
               </tr>
             </tbody>
           </table>
+
+          <section class="commentaires">
+            <div class="commentaire">
+              <p>Commentaire 1</p>
+            </div>
+            <div class="commentaire">
+              <p>Commentaire 2</p>
+            </div>
+            <div class="commentaire">
+              <p>Commentaire 3</p>
+            </div>
+            <div class="commentaire">
+              <p>Commentaire 4</p>
+            </div>
+          </section>
         </section>
 
 
       </main>
 
-      <footer>
-        <p>Texte du footer</p>
+      <footer class="footer p-4 mt-5">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong>
+          </p>
+        </div>
       </footer>
     </div>
   </body>
