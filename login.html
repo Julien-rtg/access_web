@@ -6,7 +6,7 @@
     <meta name="description" content="blog accessibilité web" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="app.js"></script>
-    <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
     <title>Connexion</title>
   </head>
   <body class="section p-0">
@@ -84,14 +84,15 @@
                   required
                   minlength="8"
                 />
-                <img
-                  class="svg-eye"
-                  src="./assets/eye-svgrepo-com.svg"
-                  alt="show-password"
-                  aria-label="show-password"
-                  onclick="showPassword()"
-                  id="password"
-                />
+
+                <a class="svg-eye" href="#" onclick="showPassword()" onkeydown="showPassword()">
+                  <img
+                    src="./assets/eye-svgrepo-com.svg"
+                    alt="show-password"
+                    title="show-password"
+                    id="password"
+                  />
+                </a>
               </div>
             </div>
 
@@ -110,7 +111,9 @@
       <div class="content has-text-centered">
         <p>
           <b>Nom société - adresse - téléphone -</b>
-          <a href="https://creativecommons.org/licenses/by-sa/4.0">Mentions légales</a>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0"
+            >Mentions légales</a
+          >
         </p>
       </div>
     </footer>
