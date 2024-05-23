@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="home access web blog" />
+    <meta name="description" content="Blog d'accessibilité web" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
     <title>Accueil</title>
   </head>
   <body class="section p-0">
     <header>
-      <nav class="navbar">
+      <div class="navbar">
         <div class="navbar-brand">
           <a class="navbar-item index" aria-label="accueil" href="index.html">
             <img alt="logo" src="/assets/1.jpg" />
@@ -33,20 +34,35 @@
 
           <div class="navbar-end">
             <div class="navbar-item">
+              <input
+                name="search"
+                class="input"
+                type="text"
+                placeholder="Recherche"
+              />
               <div class="buttons">
-                <a class="button is-primary has-text-dark" href="login.html">
-                  <strong>Connexion</strong>
-                </a>
+                <ul>
+                  <li>
+                    <a
+                      class="button is-primary has-text-dark"
+                      href="login.html"
+                    >
+                      <b>Connexion</b>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="main">
       <section>
-        <h1 class="has-text-centered has-text-weight-bold">Liste des articles</h1>
+        <h1 class="has-text-centered has-text-weight-bold">
+          Liste des articles
+        </h1>
         <article class="article">
           <div class="box">
             <h2 class="has-text-weight-bold">Article 1</h2>
@@ -64,11 +80,15 @@
                 laoreet eros ornare.
               </p>
               <img src="assets/538-500x200.jpg" alt="image de l'article" />
+              <time datetime="10-05-2024"></time>
             </div>
             <p>25 Commentaires</p>
             <div class="is-flex is-flex-direction-column">
-              <a href="details-post.html">Voir l'article</a>
+              <a href="details-post.html" aria-label="Voir l'article 1"
+              >Voir l'article</a
+              >
               <a href="details-post.html#commentaires">Voir les commentaires</a>
+              <p>Date : 10-05-2024</p>
             </div>
           </div>
         </article>
@@ -89,11 +109,15 @@
                 laoreet eros ornare.
               </p>
               <img src="assets/538-500x200.jpg" alt="image de l'article" />
+              <time datetime="10-05-2024"></time>
             </div>
             <p>7 Commentaires</p>
             <div class="is-flex is-flex-direction-column">
-              <a href="details-post.html">Voir l'article</a>
+              <a href="details-post.html" aria-label="Voir l'article 2"
+              >Voir l'article</a
+              >
               <a href="details-post.html#commentaires">Voir les commentaires</a>
+              <p>Date : 10-05-2024</p>
             </div>
           </div>
         </article>
@@ -114,11 +138,15 @@
                 laoreet eros ornare.
               </p>
               <img src="assets/538-500x200.jpg" alt="image de l'article" />
+              <time datetime="10-05-2024"></time>
             </div>
             <p>9 Commentaires</p>
             <div class="is-flex is-flex-direction-column">
-              <a href="details-post.html">Voir l'article</a>
+              <a href="details-post.html" aria-label="Voir l'article 3"
+              >Voir l'article</a
+              >
               <a href="details-post.html#commentaires">Voir les commentaires</a>
+              <p>Date : 10-05-2024</p>
             </div>
           </div>
         </article>
@@ -139,11 +167,15 @@
                 laoreet eros ornare.
               </p>
               <img src="assets/538-500x200.jpg" alt="image de l'article" />
+              <time datetime="10-05-2024"></time>
             </div>
             <p>5 Commentaires</p>
             <div class="is-flex is-flex-direction-column">
-              <a href="details-post.html">Voir l'article</a>
+              <a href="details-post.html" aria-label="Voir l'article 4"
+              >Voir l'article</a
+              >
               <a href="details-post.html#commentaires">Voir les commentaires</a>
+              <p>Date : 10-05-2024</p>
             </div>
           </div>
         </article>
@@ -164,11 +196,15 @@
                 laoreet eros ornare.
               </p>
               <img src="assets/538-500x200.jpg" alt="image de l'article" />
+              <time datetime="10-05-2024"></time>
             </div>
             <p>2 Commentaires</p>
             <div class="is-flex is-flex-direction-column">
-              <a href="details-post.html">Voir l'article</a>
+              <a href="details-post.html" aria-label="Voir l'article 5"
+              >Voir l'article</a
+              >
               <a href="details-post.html#commentaires">Voir les commentaires</a>
+              <p>Date : 10-05-2024</p>
             </div>
           </div>
         </article>
@@ -178,7 +214,8 @@
     <footer class="footer p-4 mt-5">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong>
+          <b>Nom société - adresse - téléphone -</b>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">Mentions légales</a>
         </p>
       </div>
     </footer>

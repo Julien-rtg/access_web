@@ -6,6 +6,12 @@ body{
   font-size: 21px;
 }
 
+.svg-eye {
+  width: 40px;
+  cursor: pointer;
+  position: absolute;
+}
+
 .nav_text_container{
   display: flex;
   align-items: center;

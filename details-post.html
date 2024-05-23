@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="detail access web blog" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg" />
     <title>Details article</title>
   </head>
   <body class="section p-0">
@@ -33,10 +34,23 @@
 
           <div class="navbar-end">
             <div class="navbar-item">
+              <input
+                name="search"
+                class="input"
+                type="text"
+                placeholder="Recherche"
+              />
               <div class="buttons">
-                <a class="button is-primary has-text-dark" href="login.html">
-                  <strong>Connexion</strong>
-                </a>
+                <ul>
+                  <li>
+                    <a
+                      class="button is-primary has-text-dark"
+                      href="login.html"
+                    >
+                      <b>Connexion</b>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -45,6 +59,7 @@
     </header>
 
     <main class="main">
+      <p>Accueil > Détails article</p>
       <article class="article">
         <h1>Titre article</h1>
         <p>
@@ -60,33 +75,34 @@
         </p>
 
         <table class="table">
+          <caption>Tableau de commentaires</caption>
           <thead>
             <tr>
-              <th scope="col">Colonne 1</th>
-              <th scope="col">Colonne 2</th>
-              <th scope="col">Colonne 3</th>
+              <th id="col1" scope="col">Colonne 1</th>
+              <th id="col2" scope="col">Colonne 2</th>
+              <th id="col3" scope="col">Colonne 3</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Contenu</td>
-              <td>Contenu</td>
-              <td>Contenu</td>
+              <td headers="col1">Contenu</td>
+              <td headers="col2">Contenu</td>
+              <td headers="col3">Contenu</td>
             </tr>
             <tr>
-              <td>Contenu</td>
-              <td>Contenu</td>
-              <td>Contenu</td>
+              <td headers="col1">Contenu</td>
+              <td headers="col2">Contenu</td>
+              <td headers="col3">Contenu</td>
             </tr>
             <tr>
-              <td>Contenu</td>
-              <td>Contenu</td>
-              <td>Contenu</td>
+              <td headers="col1">Contenu</td>
+              <td headers="col2">Contenu</td>
+              <td headers="col3">Contenu</td>
             </tr>
             <tr>
-              <td>Contenu</td>
-              <td>Contenu</td>
-              <td>Contenu</td>
+              <td headers="col1">Contenu</td>
+              <td headers="col2">Contenu</td>
+              <td headers="col3">Contenu</td>
             </tr>
           </tbody>
         </table>
@@ -94,15 +110,19 @@
       <aside class="commentaires" id="commentaires">
         <div class="commentaire">
           <p>Commentaire 1</p>
+          <a href="#">Signaler</a>
         </div>
         <div class="commentaire">
           <p>Commentaire 2</p>
+          <a href="#">Signaler</a>
         </div>
         <div class="commentaire">
           <p>Commentaire 3</p>
+          <a href="#">Signaler</a>
         </div>
         <div class="commentaire">
           <p>Commentaire 4</p>
+          <a href="#">Signaler</a>
         </div>
       </aside>
     </main>
@@ -110,7 +130,8 @@
     <footer class="footer p-4 mt-5">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong>
+          <b>Nom société - adresse - téléphone -</b>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">Mentions légales</a>
         </p>
       </div>
     </footer>

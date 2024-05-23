@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="blog accessibilité web" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
     <title>Connexion</title>
   </head>
   <body class="section p-0">
@@ -50,45 +52,56 @@
           />
         </div>
         <form action="index.html">
-          <div class="field">
-            <label for="email" class="label has-text-left">Email</label>
-            <div class="control">
-              <input
-                class="input"
-                id="email"
-                name="email"
-                type="text"
-                placeholder="Email"
-                autofocus
-                autocomplete="username"
-                required
-              />
+          <fieldset>
+            <legend>Connexion</legend>
+            <div class="field">
+              <label for="email" class="label has-text-left">Email*</label>
+              <div class="control">
+                <input
+                  class="input"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  autofocus
+                  autocomplete="username"
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="field">
-            <label for="password" class="label has-text-left"
-              >Mot de passe</label
-            >
-            <div class="control">
-              <input
-                class="input"
-                id="password"
-                name="password"
-                type="password"
-                placeholder="Mot de passe"
-                autocomplete="current-password"
-                required
-                minlength="8"
-              />
+            <div class="field">
+              <label for="password" class="label has-text-left"
+                >Mot de passe* <span>(8 caractères min)</span></label
+              >
+              <div class="control">
+                <input
+                  class="input"
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Mot de passe"
+                  autocomplete="current-password"
+                  required
+                  minlength="8"
+                />
+                <img
+                  class="svg-eye"
+                  src="./assets/eye-svgrepo-com.svg"
+                  alt="show-password"
+                  aria-label="show-password"
+                  onclick="showPassword()"
+                  id="password"
+                />
+              </div>
             </div>
-          </div>
 
-          <button
-            class="button is-info is-fullwidth has-text-black"
-            type="submit"
-          >
-            Connexion
-          </button>
+            <button
+              class="button is-info is-fullwidth has-text-black"
+              type="submit"
+            >
+              Connexion
+            </button>
+          </fieldset>
         </form>
       </div>
     </main>
@@ -96,7 +109,8 @@
     <footer class="footer p-4 mt-5">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong>
+          <b>Nom société - adresse - téléphone -</b>
+          <a href="https://creativecommons.org/licenses/by-sa/4.0">Mentions légales</a>
         </p>
       </div>
     </footer>
